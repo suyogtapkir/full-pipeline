@@ -24,8 +24,8 @@ pipeline {
         stage('Code Build') {
             steps {
                  sh '''
-                 cd /home/jenkins/workspace/full-ci/my-app'
-                 'mvn install -Dmaven.test.skip=true'
+                 cd /home/jenkins/workspace/full-ci/my-app
+                 mvn install -Dmaven.test.skip=true
                  '''
             }
         }
