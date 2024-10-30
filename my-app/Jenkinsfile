@@ -23,7 +23,7 @@ pipeline {
         // Build the application code using Maven
         stage('Code Build') {
             steps {
-                 sh 'cd my-app'
+                 sh 'cd /home/jenkins/workspace/full-ci/my-app'
                  sh 'mvn install -Dmaven.test.skip=true'
             }
         }
