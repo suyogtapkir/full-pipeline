@@ -3,7 +3,7 @@ pipeline {
     // The agent name must match with the jenkins node name (Manage jenkins -> Nodes)
     agent {
         node {
-            label 'maven-build-server'
+            label 'maven_build_server'
         }
     }
 
